@@ -1,0 +1,87 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700);
+
+html, body {
+	height: 100%;
+	width: 100%;
+	font-family: "Lato";
+}
+
+header {
+	background-color: #373D49;
+	width: 100%;
+	padding: 15px 10px !important;
+	color: white;
+	font-size: 22px;
+	height: 10%;
+}
+
+.content {
+	height: 90%;
+}
+
+input:focus {
+      outline: none;
+}
+
+.remove_padding {
+	padding: 0 !important;
+}
+
+.row {
+	height: 100%;
+}
+
+#map {
+	width: 100%;
+	height: 100%;
+}
+
+input {
+	width: 100%;
+	height: auto;
+	padding: 10px;
+}
+
+input:focus+ul {
+	opacity: 1;
+}
+
+ul {
+	width: 100%;
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	position: relative;
+	background-color: white;
+	overflow: scroll;
+	height: 90%;
+}
+
+li {
+	padding: 10px;
+	border: 1px solid lightgray;
+	cursor: pointer;
+}
+
+li:hover {
+	background-color: lightgray;
+
+}
+
+.icon {
+	width: 50px;
+	height: auto;
+}
+
+.diffColor {
+	background-color: blue;
+}
+
+@media (max-width: 768px) {
+	.map-container {
+		height: 70%;
+	}
+	.list-container {
+		height: 30%;
+	}
+}

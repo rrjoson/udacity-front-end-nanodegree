@@ -1,0 +1,113 @@
+/* Base Styles */
+
+h1,
+h2,
+h3,
+p,
+a,
+figcaption {
+    font-weight: 200;
+    letter-spacing: 0.5px;
+}
+
+img {
+    max-width: 100%;
+}
+
+.clearfix {
+    clear: both;
+}
+
+/* Navbar */
+
+.navbar img {
+    height: 25px;
+    width: auto;
+}
+
+/* Header */
+
+.main-photo {
+    position: relative;
+    height: 85vh;
+    background: url(images/main-photo.jpg) center center fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+header h1 {
+    font-size: 40px;
+    margin-bottom: 0;
+}
+
+header h2 {
+    margin-top: 0;
+}
+
+/* Featured Work */
+
+.featured-work {
+    padding: 20px 0 20px;
+}
+
+.featured-work-heading {
+    margin-bottom: 20px;
+    font-size: 40px;
+}
+
+.project-title {
+    text-align: center;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.featured-work figure {
+    opacity: 0;
+    position: relative;
+    overflow: hidden;
+    transform: translateX(20px);
+    transition: all 0.3s ease-in-out;
+}
+
+.featured-work .is-showing {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.featured-work figure img {
+    transform: scale(1);
+    transition: all 0.3s ease-in-out;
+}
+
+.featured-work figure:hover figcaption {
+    left: 50%;
+    transform: translate(-50%, 50%);
+}
+
+.featured-work figure:hover img {
+    transform: scale(1.2);
+    transition: all 0.3s ease-in-out;
+}
+
+.featured-work figcaption {
+    position: absolute;
+    bottom: 50%;
+    font-size: 20px;
+    padding: 2px 8px;
+    left: -100%;
+    transition: all 0.3s ease-in-out;
+}
+
+.featured-work i {
+    color: #000;
+    transition: all 0.3s ease-in-out;
+}
+
+.featured-work i:hover {
+    opacity: 0.5;
+    transition: all 0.3s ease-in-out;
+}
